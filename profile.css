@@ -140,3 +140,22 @@
    text-decoration: none;
    color: black;
 }
+
+.post1{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   margin-left: 15px;
+   margin-top: 40px;
+   margin-bottom: 100px;
+   
+
+}
+.post1 .post-images{
+   width: 410px;
+   height: 340px;
+}
+.post1 .post-images img{
+   width: 100%;
+   height: 100%;
+}
