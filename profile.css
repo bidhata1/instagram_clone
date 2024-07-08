@@ -3,8 +3,8 @@
     
 }
 .image{
-    width: 260px;
-    height: 250px;
+    width: 250px;
+    height: 240px;
     display: inline-block; 
     position: relative; 
     overflow: hidden; 
@@ -44,12 +44,15 @@
     flex-direction: row;
     gap: 25px;
     margin-top: 40px;
-    margin-left: 8rem;
+    margin-left: 9rem;
 
  }
+ .highlight .highlight-name p{
+   font: 0.8em sans-serif;;
+ }
+
  .photo p{
-    font-size: 10px;
-    font-weight: 200;
+    
     text-align: center;
  }
 
@@ -59,8 +62,8 @@
     
  }
  .image1{
-    width: 140px;
-    height: 130px;
+    width: 110px;
+    height: 100px;
     display: inline-block; 
     position: relative; 
     overflow: hidden; 
@@ -71,4 +74,69 @@
         width: 100%; 
         height: 100%; 
         margin-left: 0px;
+}
+.menu{
+   display: flex;
+   flex-direction: row;
+   gap:100px;
+   margin-left: 27rem;
+   margin-top: 50px;
+}
+.menu .post{
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+}
+.menu .saved{
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+}
+.menu .tagged{
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+}
+.menu .reels{
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+}
+
+.post .posts-picture a{
+   text-decoration: none;
+   color: black;
+
+}
+.post .posts-para p{
+   text-align: center;
+   margin-top: 0px;
+}
+
+.reels .reels-picture a{
+   text-decoration: none;
+   color: black;
+}
+.reels .reels-para p{
+   text-align: center;
+   margin-top: 0px;
+}
+
+.saved .saved-para p{
+   text-align: center;
+   margin-top: 0px;
+}
+.tagged .tagged-para p{
+   text-align: center;
+   margin-top: 0px;
+}
+
+.saved .saved-picture a{
+   text-decoration: none;
+   color: black;
+}
+
+.tagged .tagged-picture a{
+   text-decoration: none;
+   color: black;
 }
