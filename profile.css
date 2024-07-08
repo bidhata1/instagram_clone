@@ -31,7 +31,7 @@ body {
 .logo h2 {
    margin-top: 20px;
    margin-bottom: 20px;
-   margin-left: -35px;
+   margin-left: -55px;
    
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
@@ -43,6 +43,7 @@ body {
    display: flex;
    flex-direction: column;
    gap: 10px;
+   margin-left: 30px;
 }
 
 .nav-links a {
@@ -65,11 +66,11 @@ body {
 }
 
 .sidebar-footer {
-   margin-top: 15px;
+   margin-top: 4px;
    display: flex;
    align-items: center;
    padding: 10px 0;
-   margin-left: -35px;
+   margin-left: -85px;
 }
 
 .sidebar-footer img {
@@ -183,7 +184,6 @@ body {
    width: 110px;
    height: 100px;
    display: inline-block; 
-   
    overflow: hidden; 
    border-radius: 100%; 
    gap: 20px;
