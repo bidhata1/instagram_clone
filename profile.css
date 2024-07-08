@@ -102,8 +102,40 @@ body {
 .main {
    display: flex;
    flex-direction: row;
-   gap: 10rem;
-   margin-top: 70px;
+   gap: 8rem;
+   margin-top: 50px;
+   margin-left: 20px;
+}
+.edit a{
+   text-decoration: none;
+   border:0.0px solid burlywood;
+   display:block;          
+   height:30px; /*height of image*/
+   width:90px;
+   text-align: center;
+   padding: 5px;
+   color: #000;
+   border-radius: 8px;
+   background-color: lightgrey;
+}
+
+.archive a{
+   text-decoration: none;
+   border:0.0px solid burlywood;
+   display:block;          
+   height:30px; /*height of image*/
+   width:103px;
+   text-align: center;
+   padding: 5px;
+   color: #000;
+   border-radius: 8px;
+   background-color: lightgrey;
+}
+
+.setting a{
+   text-decoration: none;
+   border:0.1px cornflowerblue;
+   color: #000;
 }
 
 .main2 {
