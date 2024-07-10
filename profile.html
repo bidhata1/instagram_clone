@@ -33,8 +33,9 @@
         <div class="main">
             <div class="main1">
                 <div class="image">
-                    <img src="images/flower7.jpg" alt="picture">
+                    <img src="images/flower7.jpg" alt="picture" id="profilePic">
                 </div>
+                <input type="file" id="profilePicInput" style="display: none;" accept="images/*">
             </div>
             <div class="main2">
                 <div class="first">
@@ -48,10 +49,26 @@
                 <a href="archive.html">View archive</a>
             </div>
             <div class="setting">
-                <a href=""><img src="images/settings.png"/></a>
+                <a href="#" id="settingsIcon"><i class="fas fa-cog"></i></a>
             </div>
+
+            <div id="floatingBox" class="modal-setting">
+                <div class="modal-content-setting">
+                    <span class="close-setting">&times;</span>
+                    <h2>Settings</h2>
+                        <a href="#">Apps and Websites</a>
+                        <a href="#">QR code</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Settings and privacy</a>
+                        <a href="#">Meta Verified</a>
+                        <a href="#">Supervision</a>
+                        <a href="#">Logout</a>
                 </div>
-                <div class="second">
+            </div>
+
+        </div>
+
+        <div class="second">
             <div class="para1">
                 <p>1 post</p>
             </div>
@@ -86,6 +103,12 @@
                         <p>name</p>
                     </div>
                 </div>
+
+                <div class="hide-content">
+
+
+                </div>
+
                 <div class="photo">
                     <div class="image1">
                         <img src="images/bidhata.jpg">
@@ -139,37 +162,29 @@
 
         <div class="menu">
             <div class="post">
-                <div class="posts-picture">
-                    <img src="images/posts.png">
-                </div>
+                
                 <div class="posts-para">
-                    <a href="#">Posts</a>
+                    <a href="#"><i class="fas fa-newspaper"></i>Posts</a>
                 </div>
             </div>
             <div class="reels">
-                <div class="reels-picture">
-                    <img src="images/reel.png">
-                </div>
+                
                 <div class="reels-para">
-                    <a href="">Reels</a>
+                    <a href=""><i class="fas fa-video"></i>Reels</a>
                 </div>
                 
             </div>
             <div class="saved">
-                <div class="saved-picture">
-                    <img src="images/save.png">
-                </div>
+                
                 <div class="saved-para">
-                    <a href="">Saved</a>
+                    <a href=""><i class="fas fa-bookmark"></i>Saved</a>
                 </div>
                 
             </div>
             <div class="tagged">
-                <div class="tagged-picture">
-                    <img src="images/tagged.png">
-                </div>
+                
                 <div class="tagged-para">
-                    <a href="">Tagged</a>
+                    <a href=""><i class="fas fa-tag"></i>Tagged</a>
                 </div>
                 
             </div>
@@ -177,29 +192,36 @@
         </div>
 
         <div class="post1">
-            <div class="post-images">
+            <div class="post-images" data-description="flower spread positive vibes">
                 <img src="images/flower.jpg">
             </div>
-            <div class="post-images">
+            <div class="post-images" data-description="flower spread love">
                 <img src="images/flower1.jpg">
             </div>
-            <div class="post-images">
+            <div class="post-images" data-description="Love is in air haha">
                 <img src="images/flower2.jpg">
             </div>
-            <div class="post-images">
+            <div class="post-images" data-description="LOL LOL LOL">
                 <img src="images/flower3.jpg">
             </div>
-            <div class="post-images">
+            <div class="post-images" data-description="lots of laugh">
                 <img src="images/flower5.jpg">
             </div>
-            <div class="post-images">
+            <div class="post-images" data-description="Nature Lovers">
                 <img src="images/flower6.jpg">
             </div>
         </div>
-
       </div>
-
     </div>
+
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="">
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+    
 
     <!--footer-->
     <div class="footer">

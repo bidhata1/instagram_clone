@@ -136,9 +136,67 @@ body {
    width: 30px;
    height: 30px;
 }
-.setting img{
+.setting a i {
+   font-size: 24px; 
+   color: #333; 
+}
+
+.modal-setting {
+   display: none; 
+   position: fixed; 
+   z-index: 1; 
+   left: 0;
+   top: 0;
    width: 100%;
    height: 100%;
+   overflow: auto; 
+   background-color: rgb(0,0,0); 
+   background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content-setting {
+   background-color: #fefefe;
+   margin: 10% auto;
+   padding: 10px;
+   border-radius: 30px;
+   border: 1px solid #888;
+   width: 80%;
+   max-width: 450px; /* Adjust the width of the floating box */
+}
+.modal-content-setting h2{
+   text-align: center;
+   margin-bottom: 15px;
+   font-size: 20px;
+   margin-top: 20px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.modal-content-setting a{
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+   color: #262626;
+   font-size: 15px;
+   padding: 10px 15px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   transition: background-color 0.3s;
+
+}
+.close-setting {
+   position: absolute;
+   top: 10px;
+   right: 25px;
+   color: #aaa;
+   font-size: 28px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+.close-.setting,
+.close-setting:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 .main2 {
@@ -213,25 +271,6 @@ body {
    gap: 8px;
 }
 
-.post .posts-picture,
-.reels .reels-picture,
-.saved .saved-picture,
-.tagged .tagged-picture {
-   width: 25px;
-   height: 25px;
-   margin-top: -3px;
-   
-}
-.post .posts-picture img,
-.reels .reels-picture img,
-.saved .saved-picture img,
-.tagged .tagged-picture img {
-   width: 100%;
-   height: 100%;
-   
-}
-
-
 .post .posts-para a,
 .reels .reels-para a,
 .saved .saved-para a,
@@ -241,6 +280,13 @@ body {
    text-decoration: none;
    color: black;
 }
+.posts-para i,
+.reels-para i,
+.saved-para i,
+.tagged-para i{
+   margin-right: 8px;
+}
+
 
 .post1 {
    display: grid;
@@ -293,3 +339,59 @@ body {
    font-style: italic;
    text-align: center;
 }
+
+
+
+
+/* Modal styles */
+.modal {
+   display: none; 
+   position: fixed; 
+   z-index: 1; 
+   left: 0;
+   top: 0;
+   width: 100%; 
+   height: 100%; 
+   overflow: auto; 
+   background-color: rgb(0,0,0); 
+   background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto; 
+   padding: 20px;
+   margin-top: 27px;
+   border: 1px solid #888;
+   width: 80%; 
+   max-width: 700px;
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.modal-content img {
+   width: 100%;
+   height: auto;
+}
+
+.modal-content p {
+   margin-top: 15px;
+}
+
+
+
+
+
+
