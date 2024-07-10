@@ -27,12 +27,18 @@ body {
    left: 0;
    top: 0;
 }
+.logo {
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: -25px;
+}
 
-.logo h2 {
-   margin-top: 20px;
-   margin-bottom: 20px;
-   margin-left: -55px;
-   
+.logo a {
+   text-decoration: none;
+   color: #000;
+   font-size: 28px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
 }
@@ -308,40 +314,6 @@ body {
    height: 100%;
 }
 
-.footer {
-   display: flex;
-   flex-direction: row;
-   gap: 400px;
-   width: 100%;
-   height: 100px;
-   background-color: beige;
-   align-items: center;
-   justify-content: center;
-   padding: 20px;
-}
-
-.footer .footer-para p {
-   font-size: 18px;
-   font-weight: 300;
-}
-
-.footer-text {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-}
-
-.footer .footer-text a {
-   text-decoration: none;
-   color: black;
-   font-size: 20px;
-   font-style: italic;
-   text-align: center;
-}
-
-
-
 
 /* Modal styles */
 .modal {
@@ -390,8 +362,36 @@ body {
    margin-top: 15px;
 }
 
+.footer {
+   display: flex;
+   flex-direction: row;
+   gap: 400px;
+   width: 100%;
+   height: 100px;
+   background-color: beige;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
 
+.footer .footer-para p {
+   font-size: 18px;
+   font-weight: 300;
+}
 
+.footer-text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
 
+.footer .footer-text a {
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   font-style: italic;
+   text-align: center;
+}
 
 
